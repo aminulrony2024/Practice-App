@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -30,7 +31,8 @@ class MainActivity : ComponentActivity() {
                            fontFamily = FontFamily.Monospace,
                            fontStyle = FontStyle.Italic,
                            fontWeight = FontWeight.Bold)
-                       Text("Hi, Md Aminul Islam Rony", color = Color.Green)
+                       Text("Hi, Md Aminul Islam Rony", color = Color.Green,
+                           modifier = Modifier.background(Color.Yellow))
                    }
                 }
             }
