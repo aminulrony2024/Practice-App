@@ -8,6 +8,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -16,6 +17,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aminulrony.practiceapp.ui.theme.PracticeAppTheme
 
@@ -31,8 +34,9 @@ class MainActivity : ComponentActivity() {
                            fontFamily = FontFamily.Monospace,
                            fontStyle = FontStyle.Italic,
                            fontWeight = FontWeight.Bold)
-                       Text("Hi, Md Aminul Islam Rony", color = Color.Green,
-                           modifier = Modifier.background(Color.Yellow))
+                       Text("Hi, Md Aminul Islam Rony", color = Color.Yellow,
+                           modifier = Modifier.background(Color.Green).width(200.dp),
+                           textAlign = TextAlign.Center)
                    }
                 }
             }
