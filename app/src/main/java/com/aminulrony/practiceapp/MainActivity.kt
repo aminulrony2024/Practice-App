@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -41,10 +42,19 @@ class MainActivity : ComponentActivity() {
 //                       val names = arrayOf("Md","Aminul","Islam","Rony")
 //                       for(name in names)
 //                           Text(text = name, modifier = Modifier.padding(30.dp, 0.dp, 0.dp, 0.dp))
-                       Text(text = "Md Aminul Islam Rony\n".repeat(10))
+//                       Text(text = "Md Aminul Islam Rony\n".repeat(10))
+                       layout()
                    }
                 }
             }
+        }
+    }
+    @Composable
+    fun layout()
+    {
+        Column() {
+            for (i in 1..20)
+                Text(text = "Md Aminul Islam Rony")
         }
     }
 }
