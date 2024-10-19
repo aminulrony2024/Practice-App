@@ -38,9 +38,9 @@ class MainActivity : ComponentActivity() {
 //                       Text("Hi, Md Aminul Islam Rony", color = Color.Yellow,
 //                           modifier = Modifier.background(Color.Green).width(200.dp).height(100.dp),
 //                           textAlign = TextAlign.Center)
-                       var names = arrayOf("Md","Aminul","Islam","Rony")
+                       val names = arrayOf("Md","Aminul","Islam","Rony")
                        for(name in names)
-                           Text(text="$name")
+                           Text(text = name)
                    }
                 }
             }
