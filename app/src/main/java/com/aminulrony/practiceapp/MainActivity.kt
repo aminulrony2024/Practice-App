@@ -38,9 +38,10 @@ class MainActivity : ComponentActivity() {
 //                       Text("Hi, Md Aminul Islam Rony", color = Color.Yellow,
 //                           modifier = Modifier.background(Color.Green).width(200.dp).height(100.dp),
 //                           textAlign = TextAlign.Center)
-                       val names = arrayOf("Md","Aminul","Islam","Rony")
-                       for(name in names)
-                           Text(text = name)
+//                       val names = arrayOf("Md","Aminul","Islam","Rony")
+//                       for(name in names)
+//                           Text(text = name, modifier = Modifier.padding(30.dp, 0.dp, 0.dp, 0.dp))
+                       Text(text = "Md Aminul Islam Rony\n".repeat(10))
                    }
                 }
             }
