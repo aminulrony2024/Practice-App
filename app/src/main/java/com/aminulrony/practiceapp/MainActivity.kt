@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Scaffold
@@ -30,13 +31,16 @@ class MainActivity : ComponentActivity() {
             PracticeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                    Column (modifier = Modifier.padding(innerPadding)){
-                       Text(text="Welcome to my new android app", color = Color.Magenta, fontSize = 20.sp,
-                           fontFamily = FontFamily.Monospace,
-                           fontStyle = FontStyle.Italic,
-                           fontWeight = FontWeight.Bold)
-                       Text("Hi, Md Aminul Islam Rony", color = Color.Yellow,
-                           modifier = Modifier.background(Color.Green).width(200.dp),
-                           textAlign = TextAlign.Center)
+//                       Text(text="Welcome to my new android app", color = Color.Magenta, fontSize = 20.sp,
+//                           fontFamily = FontFamily.Monospace,
+//                           fontStyle = FontStyle.Italic,
+//                           fontWeight = FontWeight.Bold)
+//                       Text("Hi, Md Aminul Islam Rony", color = Color.Yellow,
+//                           modifier = Modifier.background(Color.Green).width(200.dp).height(100.dp),
+//                           textAlign = TextAlign.Center)
+                       var names = arrayOf("Md","Aminul","Islam","Rony")
+                       for(name in names)
+                           Text(text="$name")
                    }
                 }
             }
